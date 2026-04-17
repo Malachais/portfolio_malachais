@@ -2,744 +2,235 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MALACHAI'S | Hacker Ético & Dev</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <meta name="description" content="Portfólio de Malachai's — Hacker Ético, Pentester e Desenvolvedor Web." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <div class="bg-grid"></div>
 
-  <!-- ═══════════ MATRIX CANVAS BACKGROUND ═══════════ -->
-  <canvas id="matrixCanvas"></canvas>
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">MALACHAI'S</a>
 
-  <!-- ═══════════ SCAN LINE OVERLAY ═══════════ -->
-  <div class="scanlines"></div>
-  <div class="noise"></div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        ☰
+      </button>
 
-  <!-- ═══════════ NAV ═══════════ -->
-  <nav id="navbar">
-    <div class="nav-logo">
-      <span class="bracket">[</span>
-      <span class="nav-logo-text">MALACHAI'S</span>
-      <span class="bracket">]</span>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#social">Social</a>
+        <a href="#contratar" class="nav-cta">Contratar</a>
+      </nav>
     </div>
-    <div class="nav-toggle" id="navToggle">
-      <span></span><span></span><span></span>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="nav-link"><span class="cmd">~$</span> home</a></li>
-      <li><a href="#sobre" class="nav-link"><span class="cmd">~$</span> sobre</a></li>
-      <li><a href="#habilidades" class="nav-link"><span class="cmd">~$</span> skills</a></li>
-      <li><a href="#servicos" class="nav-link"><span class="cmd">~$</span> serviços</a></li>
-      <li><a href="#redes" class="nav-link"><span class="cmd">~$</span> social</a></li>
-      <li><a href="#pedido" class="nav-link cta-nav"><span class="cmd">~$</span> contratar</a></li>
-    </ul>
-  </nav>
+  </header>
 
-  <!-- ═══════════ HERO SECTION ═══════════ -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="terminal-window">
-        <div class="terminal-header">
-          <span class="terminal-btn red"></span>
-          <span class="terminal-btn yellow"></span>
-          <span class="terminal-btn green"></span>
-          <span class="terminal-title">malachais@cripta-do-caos:~</span>
-        </div>
-        <div class="terminal-body">
-          <div class="terminal-line">
-            <span class="prompt">root@malachais:~#</span>
-            <span class="typing-cmd" id="typingCmd"> whoami</span>
-          </div>
-          <div class="terminal-output" id="terminalOutput"></div>
-        </div>
-      </div>
-
-      <div class="hero-text">
-        <p class="hero-greeting">// inicializando sistema...</p>
-        <h1 class="hero-name glitch" data-text="MALACHAI'S">MALACHAI'S</h1>
-        <div class="hero-role">
-          <span class="role-prefix">&gt; </span>
-          <span class="role-text" id="roleText"></span>
-          <span class="cursor-blink">|</span>
-        </div>
-        <p class="hero-tagline">
-          <span class="quote-char">"</span>Todo sistema tem uma falha.<br>
-          Todo erro é uma oportunidade.<br>
-          E todo conhecimento oculto pode ser revelado.<span class="quote-char">"</span>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content reveal">
+        <p class="tag">SEGURANÇA • TECNOLOGIA • PRESENÇA DIGITAL</p>
+        <h1>Malachai's</h1>
+        <h2>Hacker Ético | Pentester | Desenvolvedor Web</h2>
+        <p class="hero-text">
+          Crio experiências web modernas e ajudo a fortalecer sistemas com foco em
+          segurança, desempenho e presença profissional.
         </p>
+
         <div class="hero-buttons">
-          <a href="#pedido" class="btn btn-primary">
-            <i class="fas fa-terminal"></i> Contratar Serviço
+          <a href="#contratar" class="btn btn-primary">🚀 Contratar agora</a>
+          <a href="#sobre" class="btn btn-secondary">Ver mais</a>
+        </div>
+
+        <div class="hero-cards">
+          <div class="mini-card">
+            <span class="mini-title">Foco</span>
+            <strong>Cyber Security</strong>
+          </div>
+          <div class="mini-card">
+            <span class="mini-title">Atuação</span>
+            <strong>Web & Pentest</strong>
+          </div>
+          <div class="mini-card">
+            <span class="mini-title">Perfil</span>
+            <strong>Dark • Profissional</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-tag">SOBRE</span>
+          <h2>Quem é Malachai's</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="card">
+            <p>
+              Sou um profissional voltado para segurança ofensiva, desenvolvimento web
+              e construção de presença digital com identidade forte.
+            </p>
+            <p>
+              Meu foco é unir estética, funcionalidade e proteção, criando projetos
+              que não apenas impressionam visualmente, mas também entregam estrutura,
+              clareza e confiabilidade.
+            </p>
+          </div>
+
+          <div class="card">
+            <ul class="info-list">
+              <li><strong>Nome profissional:</strong> Malachai's</li>
+              <li><strong>Área:</strong> Pentest, Web Dev e Segurança</li>
+              <li><strong>Email:</strong> brunojorge7803@gmail.com</li>
+              <li><strong>GitHub:</strong> github.com/Malachais</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-tag">SKILLS</span>
+          <h2>Competências</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Segurança Web</h3>
+            <p>Reconhecimento de vulnerabilidades, análise de superfícies de ataque e reforço de aplicações.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Front-end</h3>
+            <p>Interfaces modernas, responsivas e com identidade visual forte para portfólios e landing pages.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Git & GitHub</h3>
+            <p>Versionamento, publicação de projetos e deploy com GitHub Pages.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Linux</h3>
+            <p>Ambientes de testes, terminal, organização de ferramentas e fluxo técnico.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Performance</h3>
+            <p>Estrutura leve, código organizado e foco em carregamento limpo.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Presença Digital</h3>
+            <p>Projetos com personalidade, branding dark e comunicação visual marcante.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-tag">SERVIÇOS</span>
+          <h2>O que eu posso fazer por você</h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>🔐 Pentest Web</h3>
+            <p>Identificação de falhas, exposição de riscos e análise inicial de segurança em aplicações web.</p>
+          </div>
+
+          <div class="service-card">
+            <h3>🌐 Criação de Sites</h3>
+            <p>Portfólios, landing pages e sites modernos com design responsivo e visual profissional.</p>
+          </div>
+
+          <div class="service-card">
+            <h3>🛡️ Hardening</h3>
+            <p>Reforço básico de ambientes, organização estrutural e boas práticas de segurança.</p>
+          </div>
+
+          <div class="service-card">
+            <h3>⚙️ Ajustes Técnicos</h3>
+            <p>Correções visuais, organização de código, publicação no GitHub e melhoria de layout.</p>
+          </div>
+        </div>
+
+        <div class="center-box">
+          <a href="#contratar" class="btn btn-primary">Solicitar orçamento</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="social" class="section alt">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-tag">SOCIAL</span>
+          <h2>Me encontre</h2>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-card" href="https://github.com/Malachais" target="_blank" rel="noopener noreferrer">
+            <h3>GitHub</h3>
+            <p>@Malachais</p>
           </a>
-          <a href="#sobre" class="btn btn-secondary">
-            <i class="fas fa-user-secret"></i> Conhecer Mais
+
+          <a class="social-card" href="mailto:brunojorge7803@gmail.com">
+            <h3>Email</h3>
+            <p>brunojorge7803@gmail.com</p>
+          </a>
+
+          <a class="social-card" href="#contratar">
+            <h3>Projetos</h3>
+            <p>Solicite orçamento ou parceria</p>
           </a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="scroll-indicator">
-      <span>scroll</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </section>
+    <section id="contratar" class="section">
+      <div class="container reveal">
+        <div class="contact-box">
+          <div class="contact-info">
+            <span class="section-tag">CONTRATAR</span>
+            <h2>Vamos trabalhar juntos</h2>
+            <p>
+              Me envie uma mensagem com a ideia do seu projeto, tipo de site,
+              ajuste técnico ou necessidade de segurança.
+            </p>
 
-  <!-- ═══════════ SOBRE ═══════════ -->
-  <section id="sobre" class="section sobre-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// cat malachais.txt</span>
-        <h2 class="section-title">SOBRE <span class="highlight">MIM</span></h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="sobre-grid">
-        <div class="sobre-avatar-wrap">
-          <div class="avatar-frame">
-            <div class="avatar-inner">
-              <div class="avatar-icon">
-                <i class="fas fa-user-secret"></i>
-              </div>
-              <div class="avatar-ring ring1"></div>
-              <div class="avatar-ring ring2"></div>
-              <div class="avatar-ring ring3"></div>
-              <div class="avatar-scan"></div>
-            </div>
-            <div class="avatar-label">
-              <span>ID: MALACHAI'S</span>
-              <span class="status-dot"></span>
-              <span>ONLINE</span>
+            <div class="contact-details">
+              <p><strong>Email:</strong> brunojorge7803@gmail.com</p>
+              <p><strong>GitHub:</strong> github.com/Malachais</p>
             </div>
           </div>
 
-          <div class="info-cards">
-            <div class="info-card">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <span class="info-label">LOCALIZAÇÃO</span>
-                <span class="info-value">Brasil</span>
-              </div>
-            </div>
-            <div class="info-card">
-              <i class="fas fa-shield-alt"></i>
-              <div>
-                <span class="info-label">STATUS</span>
-                <span class="info-value online-text">Disponível</span>
-              </div>
-            </div>
-            <div class="info-card">
-              <i class="fas fa-flask"></i>
-              <div>
-                <span class="info-label">LAB</span>
-                <span class="info-value">Cripta do Caos</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sobre-text-wrap">
-          <div class="bio-terminal">
-            <div class="bio-header">
-              <span class="prompt">malachais@cripta:~/bio$</span>
-              <span class="cmd-text"> cat biography.md</span>
-            </div>
-            <div class="bio-content">
-              <p>Malachai's é um entusiasta do <span class="hl">oculto digital</span>, movido pela curiosidade de compreender tanto os sistemas visíveis quanto os invisíveis que regem o mundo da tecnologia. Atuando no campo de <span class="hl">redes, cibersegurança e pentest</span>, sua jornada é marcada pela exploração constante de vulnerabilidades — não apenas como falhas, mas como <span class="hl">portas para o aprendizado e evolução</span>.</p>
-
-              <p>Com uma mentalidade investigativa e estratégica, Malachai's desenvolve ambientes de testes próprios — verdadeiras <span class="hl">"criptas digitais"</span> — onde simula ataques, analisa comportamentos de sistemas e aprimora técnicas de defesa e exploração. Seu laboratório, conhecido como <span class="hl">Cripta do Caos</span>, representa mais do que um espaço técnico: é um território de experimentação, domínio e descoberta.</p>
-
-              <p>Além do aspecto técnico, há uma forte inclinação ao <span class="hl">simbólico e ao desconhecido</span>. Essa dualidade entre lógica e mistério molda sua identidade, criando uma abordagem única para resolver problemas e construir soluções.</p>
-            </div>
-          </div>
-
-          <div class="especialidades">
-            <h3 class="esp-title"><i class="fas fa-crosshairs"></i> Especialidades</h3>
-            <ul class="esp-list">
-              <li><i class="fas fa-chevron-right"></i> Pentest e análise de vulnerabilidades</li>
-              <li><i class="fas fa-chevron-right"></i> Redes e infraestrutura</li>
-              <li><i class="fas fa-chevron-right"></i> Programação e automação de scripts</li>
-              <li><i class="fas fa-chevron-right"></i> Desenvolvimento de ferramentas para segurança</li>
-              <li><i class="fas fa-chevron-right"></i> Simulação de ataques controlados</li>
-              <li><i class="fas fa-chevron-right"></i> Ambientes Linux (Kali, Manjaro, Arch-base)</li>
-              <li><i class="fas fa-chevron-right"></i> Desenvolvimento de laboratórios de testes</li>
-            </ul>
-          </div>
+          <form class="contact-form" id="contact-form">
+            <input type="text" id="nome" placeholder="Seu nome" required />
+            <input type="email" id="email" placeholder="Seu email" required />
+            <textarea id="mensagem" rows="6" placeholder="Descreva seu projeto" required></textarea>
+            <button type="submit" class="btn btn-primary">🚀 Enviar pedido</button>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ═══════════ HABILIDADES ═══════════ -->
-  <section id="habilidades" class="section skills-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// ls -la /skills</span>
-        <h2 class="section-title">HABILIDADES <span class="highlight">&amp; FERRAMENTAS</span></h2>
-        <div class="section-line"></div>
-      </div>
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
 
-      <div class="skills-grid">
-        <!-- PROGRAMAÇÃO -->
-        <div class="skill-category">
-          <div class="category-header">
-            <i class="fas fa-code"></i>
-            <h3>Programação</h3>
-          </div>
-          <div class="skill-bars">
-            <div class="skill-item" data-level="90">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fab fa-js-square"></i> JavaScript</span>
-                <span class="skill-pct">90%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
-            </div>
-            <div class="skill-item" data-level="85">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fab fa-python"></i> Python</span>
-                <span class="skill-pct">85%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-            </div>
-            <div class="skill-item" data-level="88">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fab fa-html5"></i> HTML5</span>
-                <span class="skill-pct">88%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
-            </div>
-            <div class="skill-item" data-level="82">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS3</span>
-                <span class="skill-pct">82%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SEGURANÇA -->
-        <div class="skill-category">
-          <div class="category-header">
-            <i class="fas fa-skull-crossbones"></i>
-            <h3>Hacking Ético</h3>
-          </div>
-          <div class="skill-bars">
-            <div class="skill-item" data-level="88">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fas fa-bug"></i> Pentest</span>
-                <span class="skill-pct">88%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
-            </div>
-            <div class="skill-item" data-level="85">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fas fa-search"></i> Análise de Vulnerabilidades</span>
-                <span class="skill-pct">85%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-            </div>
-            <div class="skill-item" data-level="80">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fas fa-network-wired"></i> Redes &amp; Infraestrutura</span>
-                <span class="skill-pct">80%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-            </div>
-            <div class="skill-item" data-level="78">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fas fa-lock"></i> Criptografia</span>
-                <span class="skill-pct">78%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SISTEMAS -->
-        <div class="skill-category">
-          <div class="category-header">
-            <i class="fas fa-terminal"></i>
-            <h3>Sistemas &amp; DevOps</h3>
-          </div>
-          <div class="skill-bars">
-            <div class="skill-item" data-level="92">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fab fa-linux"></i> Linux (Kali/Arch)</span>
-                <span class="skill-pct">92%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
-            </div>
-            <div class="skill-item" data-level="80">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fas fa-terminal"></i> Shell Script / Bash</span>
-                <span class="skill-pct">80%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-            </div>
-            <div class="skill-item" data-level="75">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fab fa-git-alt"></i> Git &amp; Controle de Versão</span>
-                <span class="skill-pct">75%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-            </div>
-            <div class="skill-item" data-level="77">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fas fa-cubes"></i> Virtualização / Lab</span>
-                <span class="skill-pct">77%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="77"></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TOOL BADGES -->
-      <div class="tools-section">
-        <h3 class="tools-title"><i class="fas fa-toolbox"></i> Ferramentas</h3>
-        <div class="tools-badges">
-          <span class="badge"><i class="fas fa-dragon"></i> Metasploit</span>
-          <span class="badge"><i class="fas fa-wifi"></i> Aircrack-ng</span>
-          <span class="badge"><i class="fas fa-network-wired"></i> Nmap</span>
-          <span class="badge"><i class="fas fa-bug"></i> Burp Suite</span>
-          <span class="badge"><i class="fas fa-eye"></i> Wireshark</span>
-          <span class="badge"><i class="fas fa-bomb"></i> SQLMap</span>
-          <span class="badge"><i class="fas fa-shield-alt"></i> Nessus</span>
-          <span class="badge"><i class="fab fa-python"></i> Scapy</span>
-          <span class="badge"><i class="fas fa-terminal"></i> Hydra</span>
-          <span class="badge"><i class="fas fa-unlock-alt"></i> John the Ripper</span>
-          <span class="badge"><i class="fas fa-vial"></i> OWASP ZAP</span>
-          <span class="badge"><i class="fab fa-linux"></i> Kali Linux</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════ SERVIÇOS ═══════════ -->
-  <section id="servicos" class="section services-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// cat services.json</span>
-        <h2 class="section-title">SERVIÇOS <span class="highlight">OFERECIDOS</span></h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="services-grid">
-
-        <div class="service-card" data-index="01">
-          <div class="service-card-inner">
-            <div class="service-icon-wrap">
-              <i class="fas fa-crosshairs"></i>
-            </div>
-            <div class="service-num">01</div>
-            <h3 class="service-title">Pentest</h3>
-            <p class="service-desc">Simulação de ataques reais em sistemas, redes e aplicações para identificar e reportar vulnerabilidades antes que agentes maliciosos o façam.</p>
-            <ul class="service-features">
-              <li><i class="fas fa-check"></i> Pentest de rede interna/externa</li>
-              <li><i class="fas fa-check"></i> Pentest de aplicação web</li>
-              <li><i class="fas fa-check"></i> Relatório técnico detalhado</li>
-              <li><i class="fas fa-check"></i> Recomendações de mitigação</li>
-            </ul>
-            <a href="#pedido" class="service-btn">Solicitar <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="service-card featured" data-index="02">
-          <div class="featured-badge">⚡ POPULAR</div>
-          <div class="service-card-inner">
-            <div class="service-icon-wrap">
-              <i class="fas fa-search-plus"></i>
-            </div>
-            <div class="service-num">02</div>
-            <h3 class="service-title">Análise de Vulnerabilidades</h3>
-            <p class="service-desc">Varredura profunda e análise técnica de sistemas para mapear superfícies de ataque, classificar riscos e documentar falhas de segurança.</p>
-            <ul class="service-features">
-              <li><i class="fas fa-check"></i> Varredura automatizada + manual</li>
-              <li><i class="fas fa-check"></i> Classificação CVE / CVSS</li>
-              <li><i class="fas fa-check"></i> Mapeamento da superfície de ataque</li>
-              <li><i class="fas fa-check"></i> Plano de remediação priorizado</li>
-            </ul>
-            <a href="#pedido" class="service-btn">Solicitar <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="service-card" data-index="03">
-          <div class="service-card-inner">
-            <div class="service-icon-wrap">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="service-num">03</div>
-            <h3 class="service-title">Desenvolvimento de Scripts</h3>
-            <p class="service-desc">Criação de scripts e ferramentas personalizadas em Python e JavaScript para automação, segurança e otimização de processos.</p>
-            <ul class="service-features">
-              <li><i class="fas fa-check"></i> Scripts de automação</li>
-              <li><i class="fas fa-check"></i> Ferramentas de segurança custom</li>
-              <li><i class="fas fa-check"></i> Bots e scrapers</li>
-              <li><i class="fas fa-check"></i> Integração com APIs</li>
-            </ul>
-            <a href="#pedido" class="service-btn">Solicitar <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="service-card" data-index="04">
-          <div class="service-card-inner">
-            <div class="service-icon-wrap">
-              <i class="fas fa-globe"></i>
-            </div>
-            <div class="service-num">04</div>
-            <h3 class="service-title">Desenvolvimento Web</h3>
-            <p class="service-desc">Criação de sites, sistemas e aplicações web modernas com foco em performance, segurança e design funcional.</p>
-            <ul class="service-features">
-              <li><i class="fas fa-check"></i> Sites e landing pages</li>
-              <li><i class="fas fa-check"></i> Sistemas web interativos</li>
-              <li><i class="fas fa-check"></i> HTML, CSS, JavaScript</li>
-              <li><i class="fas fa-check"></i> Otimização e segurança</li>
-            </ul>
-            <a href="#pedido" class="service-btn">Solicitar <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="service-card" data-index="05">
-          <div class="service-card-inner">
-            <div class="service-icon-wrap">
-              <i class="fas fa-network-wired"></i>
-            </div>
-            <div class="service-num">05</div>
-            <h3 class="service-title">Consultoria em Redes</h3>
-            <p class="service-desc">Análise, configuração e auditoria de infraestruturas de rede para melhorar segurança, desempenho e confiabilidade.</p>
-            <ul class="service-features">
-              <li><i class="fas fa-check"></i> Auditoria de rede</li>
-              <li><i class="fas fa-check"></i> Análise de tráfego</li>
-              <li><i class="fas fa-check"></i> Configuração de firewall</li>
-              <li><i class="fas fa-check"></i> Detecção de intrusão</li>
-            </ul>
-            <a href="#pedido" class="service-btn">Solicitar <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="service-card" data-index="06">
-          <div class="service-card-inner">
-            <div class="service-icon-wrap">
-              <i class="fas fa-flask"></i>
-            </div>
-            <div class="service-num">06</div>
-            <h3 class="service-title">Lab de Segurança</h3>
-            <p class="service-desc">Configuração e montagem de laboratórios de testes para treinamento em segurança ofensiva e defensiva com ambientes controlados.</p>
-            <ul class="service-features">
-              <li><i class="fas fa-check"></i> Setup de ambientes virtuais</li>
-              <li><i class="fas fa-check"></i> Cenários de ataque/defesa</li>
-              <li><i class="fas fa-check"></i> Ambientes Kali / Arch Linux</li>
-              <li><i class="fas fa-check"></i> Documentação do lab</li>
-            </ul>
-            <a href="#pedido" class="service-btn">Solicitar <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════ REDES SOCIAIS ═══════════ -->
-  <section id="redes" class="section social-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// cat social_links.conf</span>
-        <h2 class="section-title">REDES <span class="highlight">SOCIAIS</span></h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="social-grid">
-
-        <a href="#" class="social-card" id="social-github" target="_blank">
-          <div class="social-icon-wrap">
-            <i class="fab fa-github"></i>
-          </div>
-          <div class="social-info">
-            <span class="social-name">GitHub</span>
-            <span class="social-handle">Malachais</span>
-          </div>
-          <div class="social-arrow"><i class="fas fa-external-link-alt"></i></div>
-          <div class="social-glow"></div>
-        </a>
-
-        <a href="#" class="social-card" id="social-linkedin" target="_blank">
-          <div class="social-icon-wrap">
-            <i class="fab fa-linkedin-in"></i>
-          </div>
-          <div class="social-info">
-            <span class="social-name">LinkedIn</span>
-            <span class="social-handle">www.linkedin.com/in/bruno-malachai-s-8689043b8</span>
-          </div>
-          <div class="social-arrow"><i class="fas fa-external-link-alt"></i></div>
-          <div class="social-glow"></div>
-        </a>
-
-        <a href="#" class="social-card" id="social-instagram" target="_blank">
-          <div class="social-icon-wrap">
-            <i class="fab fa-instagram"></i>
-          </div>
-          <div class="social-info">
-            <span class="social-name">Instagram</span>
-            <span class="social-handle">@malachais.ofc</span>
-          </div>
-          <div class="social-arrow"><i class="fas fa-external-link-alt"></i></div>
-          <div class="social-glow"></div>
-        </a>
-
-        <a href="#" class="social-card" id="social-twitter" target="_blank">
-          <div class="social-icon-wrap">
-            <i class="fab fa-x-twitter"></i>
-          </div>
-          <div class="social-info">
-            <span class="social-name">Twitter / X</span>
-            <span class="social-handle"></span>
-          </div>
-          <div class="social-arrow"><i class="fas fa-external-link-alt"></i></div>
-          <div class="social-glow"></div>
-        </a>
-
-        <a href="#" class="social-card" id="social-discord" target="_blank">
-          <div class="social-icon-wrap">
-            <i class="fab fa-discord"></i>
-          </div>
-          <div class="social-info">
-            <span class="social-name">Discord</span>
-            <span class="social-handle">malachais_ofc</span>
-          </div>
-          <div class="social-arrow"><i class="fas fa-external-link-alt"></i></div>
-          <div class="social-glow"></div>
-        </a>
-
-        <a href="#" class="social-card" id="social-telegram" target="_blank">
-          <div class="social-icon-wrap">
-            <i class="fab fa-telegram-plane"></i>
-          </div>
-          <div class="social-info">
-            <span class="social-name">Telegram</span>
-            <span class="social-handle">@MalachaisOFC</span>
-          </div>
-          <div class="social-arrow"><i class="fas fa-external-link-alt"></i></div>
-          <div class="social-glow"></div>
-        </a>
-
-      </div>
-
-      <p class="social-note">
-        <i class="fas fa-info-circle"></i>
-        Os links acima serão atualizados com seus perfis reais. Clique em qualquer card para editar.
-      </p>
-    </div>
-  </section>
-
-  <!-- ═══════════ FORMULÁRIO DE PEDIDO ═══════════ -->
-  <section id="pedido" class="section order-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// POST /api/service-request</span>
-        <h2 class="section-title">PEDIDO DE <span class="highlight">SERVIÇO</span></h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="order-wrap">
-        <div class="order-info">
-          <div class="order-info-terminal">
-            <div class="oi-line"><span class="prompt2">$</span> Processo seguro e confidencial</div>
-            <div class="oi-line"><span class="prompt2">$</span> Resposta em até 24h</div>
-            <div class="oi-line"><span class="prompt2">$</span> Orçamento sem compromisso</div>
-            <div class="oi-line"><span class="prompt2">$</span> NDA disponível se necessário</div>
-          </div>
-
-          <div class="contact-email">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <span class="contact-label">EMAIL DE CONTATO</span>
-              <span class="contact-value" id="contactEmail">malachaisrealm@gmail.com</span>
-            </div>
-          </div>
-
-          <div class="order-warning">
-            <i class="fas fa-exclamation-triangle"></i>
-            <p>Todos os serviços são realizados dentro dos limites legais e éticos. Nenhuma atividade ilegal é realizada.</p>
-          </div>
-        </div>
-
-        <form id="orderForm" class="order-form" novalidate>
-          <div class="form-header">
-            <span class="form-tag">// new ServiceRequest()</span>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="clientName">
-                <i class="fas fa-user"></i> Nome / Apelido
-              </label>
-              <input type="text" id="clientName" name="clientName" placeholder="Seu nome ou nickname" required/>
-              <span class="form-error" id="errName"></span>
-            </div>
-            <div class="form-group">
-              <label for="clientEmail">
-                <i class="fas fa-envelope"></i> E-mail
-              </label>
-              <input type="email" id="clientEmail" name="clientEmail" placeholder="seu@email.com" required/>
-              <span class="form-error" id="errEmail"></span>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="serviceType">
-              <i class="fas fa-cogs"></i> Tipo de Serviço
-            </label>
-            <select id="serviceType" name="serviceType" required>
-              <option value="">-- Selecione o serviço --</option>
-              <option value="pentest">🎯 Pentest</option>
-              <option value="vulnerabilidades">🔍 Análise de Vulnerabilidades</option>
-              <option value="scripts">💻 Desenvolvimento de Scripts</option>
-              <option value="web">🌐 Desenvolvimento Web</option>
-              <option value="redes">🔗 Consultoria em Redes</option>
-              <option value="lab">🧪 Lab de Segurança</option>
-              <option value="outro">❓ Outro</option>
-            </select>
-            <span class="form-error" id="errService"></span>
-          </div>
-
-          <div class="form-group">
-            <label for="urgency">
-              <i class="fas fa-clock"></i> Urgência
-            </label>
-            <div class="urgency-options">
-              <label class="urgency-opt">
-                <input type="radio" name="urgency" value="baixa"/>
-                <span class="opt-label low">🟢 Baixa (7+ dias)</span>
-              </label>
-              <label class="urgency-opt">
-                <input type="radio" name="urgency" value="media" checked/>
-                <span class="opt-label med">🟡 Média (3-7 dias)</span>
-              </label>
-              <label class="urgency-opt">
-                <input type="radio" name="urgency" value="alta"/>
-                <span class="opt-label high">🔴 Alta (1-3 dias)</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="description">
-              <i class="fas fa-terminal"></i> Descrição do Projeto
-            </label>
-            <textarea id="description" name="description" placeholder="Descreva o que você precisa, escopo do projeto, sistemas envolvidos..." rows="5" required></textarea>
-            <span class="form-error" id="errDesc"></span>
-            <span class="char-count"><span id="charCount">0</span>/1000</span>
-          </div>
-
-          <div class="form-group">
-            <label for="budget">
-              <i class="fas fa-dollar-sign"></i> Orçamento Estimado (opcional)
-            </label>
-            <input type="text" id="budget" name="budget" placeholder="Ex: R$ 500 - R$ 1.000"/>
-          </div>
-
-          <div class="form-submit-wrap">
-            <button type="submit" class="btn-submit" id="submitBtn">
-              <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
-              <span class="btn-text">ENVIAR PEDIDO</span>
-              <span class="btn-loading" style="display:none">
-                <i class="fas fa-spinner fa-spin"></i> Processando...
-              </span>
-            </button>
-          </div>
-        </form>
-      </div>
-
-      <!-- SUCCESS / ERROR MESSAGES -->
-      <div class="form-feedback" id="formFeedback" style="display:none">
-        <div class="feedback-terminal">
-          <div class="feedback-header">
-            <span id="feedbackIcon"></span>
-            <span id="feedbackTitle"></span>
-          </div>
-          <p id="feedbackMsg"></p>
-          <button class="btn btn-secondary" id="feedbackClose">
-            <i class="fas fa-terminal"></i> Novo Pedido
-          </button>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══════════ FOOTER ═══════════ -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <span class="bracket">[</span>MALACHAI'S<span class="bracket">]</span>
-          </div>
-          <p class="footer-slogan">Explorando o oculto digital desde sempre.</p>
-          <div class="footer-lab">
-            <i class="fas fa-flask"></i>
-            <span>Cripta do Caos — Laboratório Pessoal</span>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Skills</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#redes">Social</a></li>
-            <li><a href="#pedido">Contratar</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Serviços</h4>
-          <ul>
-            <li><a href="#pedido">Pentest</a></li>
-            <li><a href="#pedido">Análise de Vulnerabilidades</a></li>
-            <li><a href="#pedido">Dev de Scripts</a></li>
-            <li><a href="#pedido">Desenvolvimento Web</a></li>
-            <li><a href="#pedido">Consultoria em Redes</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h4>Contato</h4>
-          <div class="footer-email">
-            <i class="fas fa-envelope"></i>
-            <span id="footerEmail">malachaisrealm@gmail.com</span>
-          </div>
-          <p class="footer-note">Atendimento disponível. Respondemos em até 24 horas.</p>
-          <div class="footer-status">
-            <span class="status-dot pulse"></span>
-            <span>Sistemas operacionais</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-copy">
-          <span>© 2026 MALACHAIS — Todos os direitos reservados</span>
-        </div>
-        <div class="footer-motto">
-          <span class="code-comment">// "Toda falha é uma porta."</span>
-        </div>
-      </div>
+      <p>© 2026 Malachai's — Todos os direitos reservados.</p>
     </div>
   </footer>
-
-  <!-- ═══════════ BACK TO TOP ═══════════ -->
-  <button class="back-top" id="backTop" title="Voltar ao topo">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- ═══════════ CURSOR PERSONALIZADO ═══════════ -->
-  <div class="custom-cursor" id="cursor"></div>
-  <div class="custom-cursor-dot" id="cursorDot"></div>
 
   <script src="js/main.js"></script>
 </body>
