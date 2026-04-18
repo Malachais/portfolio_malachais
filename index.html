@@ -6,6 +6,7 @@
   <title>MALACHAI'S | Hacker Ético & Dev</title>
   <meta name="description" content="Portfólio de Malachai's — Hacker Ético, Pentester e Desenvolvedor Web." />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
 </head>
 <body>
   <div class="bg-grid"></div>
@@ -34,13 +35,16 @@
       <div class="container hero-content reveal">
         <p class="tag">SEGURANÇA • TECNOLOGIA • PRESENÇA DIGITAL</p>
         <h1>Malachai's</h1>
-        <h2>Hacker Ético | Pentester | Desenvolvedor Web</h2>
+        <h2>Hacker Ético & Desenvolvedor Web</h2>
         <p class="hero-text">
-          Crio experiências web modernas e ajudo a fortalecer sistemas com foco em
-          segurança, desempenho e presença profissional.
+          Especialista em criação de sites modernos e análise de segurança.
+Transformo ideias em presença digital profissional e segura.
         </p>
 
         <div class="hero-buttons">
+          <a href="#contratar" class="btn btn-primary">
+🔥 Solicitar projeto
+</a>
           <a href="#contratar" class="btn btn-primary">🚀 Contratar agora</a>
           <a href="#sobre" class="btn btn-secondary">Ver mais</a>
         </div>
@@ -80,6 +84,11 @@
               que não apenas impressionam visualmente, mas também entregam estrutura,
               clareza e confiabilidade.
             </p>
+            <p>
+              ✔ Projetos publicados online  
+              ✔ Experiência com GitHub e deploy  
+              ✔ Foco em segurança e performance  
+              </p>
           </div>
 
           <div class="card">
@@ -231,6 +240,27 @@
       <p>© 2026 Malachai's — Todos os direitos reservados.</p>
     </div>
   </footer>
+
+<script>
+const text = "Initializing system...";
+let i = 0;
+const el = document.createElement("div");
+el.style.position = "fixed";
+el.style.bottom = "10px";
+el.style.left = "10px";
+el.style.color = "#00ffc8";
+el.style.fontSize = "12px";
+document.body.appendChild(el);
+
+function type() {
+  if (i < text.length) {
+    el.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 40);
+  }
+}
+type();
+</script>
 
   <script src="js/main.js"></script>
 </body>

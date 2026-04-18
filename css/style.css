@@ -178,9 +178,10 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(90deg, var(--primary), var(--primary-2));
-  color: #061018;
-  box-shadow: 0 0 24px rgba(0, 255, 200, 0.18);
+  background: linear-gradient(90deg, #00ffc8, #4df3ff);
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 25px rgba(0,255,200,0.4);
 }
 
 .btn-secondary {
