@@ -436,3 +436,7 @@ a {
     flex-direction: column;
   }
 }
+.btn-primary:hover {
+  box-shadow: 0 0 40px rgba(0,255,200,0.6);
+  transform: scale(1.05);
+}
