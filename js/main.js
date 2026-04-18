@@ -51,19 +51,43 @@ if (backToTop) {
 }
 
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
+  contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const nome = document.getElementById("nome").value.trim();
     const email = document.getElementById("email").value.trim();
     const mensagem = document.getElementById("mensagem").value.trim();
 
-    const assunto = encodeURIComponent(`Novo pedido de serviço de ${nome}`);
-    const corpo = encodeURIComponent(
-      `Nome: ${nome}\nEmail: ${email}\n\nProjeto:\n${mensagem}`
-    );
+    const btn = contactForm.querySelector("button");
+    btn.textContent = "Enviando...";
+    btn.disabled = true;
 
-    window.location.href = `mailto:brunojorge7803@gmail.com?subject=${assunto}&body=${corpo}`;
+    try {
+      const resposta = await fetch("https://malachais-backend.onrender.com/contato", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ nome, email, mensagem })
+      });
+
+      const dados = await resposta.json();
+
+      if (!resposta.ok) {
+        btn.textContent = "Erro ❌";
+        alert(dados.erro || "Erro ao enviar");
+        btn.disabled = false;
+        return;
+      }
+
+      btn.textContent = "Enviado ✔";
+      contactForm.reset();
+
+    } catch (error) {
+      btn.textContent = "Erro ❌";
+      alert("Erro ao conectar com o servidor");
+      btn.disabled = false;
+    }
   });
 }
 
